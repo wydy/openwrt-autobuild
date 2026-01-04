@@ -1,0 +1,1 @@
+make package/feeds/dstheme/openwrt-smartdns/check FIXUP=1
