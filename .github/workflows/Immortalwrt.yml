@@ -114,8 +114,8 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
-        sudo -E apt-get -qq update -y
-        sudo -E apt-get -qq install -y gawk git gettext libssl-dev wget python3
+        sudo -E apt -qq update -y
+        sudo -E apt -qq install -y gawk git gettext libssl-dev wget python3
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /${{ env.DIY_WORK }}
         sudo chown $USER:$GROUPS /${{ env.DIY_WORK }}
